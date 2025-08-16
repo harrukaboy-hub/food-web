@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Food Runs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="../assets/images/food-icon.svg" type="image/svg+xml">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="../Design2-MenuPage/index1.html" class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+                <div class="page-title">
+                    <h1>Checkout</h1>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="user-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="checkout-content">
+            <!-- Delivery Address Section -->
+            <section class="checkout-section">
+                <div class="section-header">
+                    <h2>Delivery Address</h2>
+                    <button class="btn-edit">
+                        <i class="fas fa-pencil-alt"></i>
+                    </button>
+                </div>
+                <div class="address-card">
+                    <div class="address-icon">
+                        <img src="../assets/images/location-icon.svg" alt="Location" width="24" height="24">
+                    </div>
+                    <div class="address-details">
+                        <h3>Home</h3>
+                        <p>123 MG Road</p>
+                        <p>Bengaluru, Karnataka, India</p>
+                    </div>
+                </div>
+                <div class="delivery-options">
+                    <div class="option-card active">
+                        <div class="option-radio">
+                            <input type="radio" id="standard" name="delivery" checked>
+                            <label for="standard"></label>
+                        </div>
+                        <div class="option-details">
+                            <h3>Standard Delivery</h3>
+                            <p>25-30 min</p>
+                        </div>
+                        <div class="option-price">RS 120</div>
+                    </div>
+                    <div class="option-card">
+                        <div class="option-radio">
+                            <input type="radio" id="express" name="delivery">
+                            <label for="express"></label>
+                        </div>
+                        <div class="option-details">
+                            <h3>Express Delivery</h3>
+                            <p>15-20 min</p>
+                        </div>
+                        <div class="option-price">RS 150</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Order Summary Section -->
+            <section class="checkout-section">
+                <div class="section-header">
+                    <h2>Order Summary</h2>
+                    <a href="../Design2-MenuPage/index1.html" class="btn-add-more">Add More</a>
+                </div>
+                <div class="order-items">
+                    <div class="order-item">
+                        <div class="item-image">
+                            <img src="burger1.svg" alt="Classic Burger">
+                        </div>
+                        <div class="item-details">
+                            <h3>Classic Burger</h3>
+                            <p class="item-customization">No pickles, Extra cheese</p>
+                            <div class="item-price-qty">
+                                <span class="item-price">RS 150</span>
+                                <div class="quantity-selector">
+                                    <button class="quantity-btn minus">
+                                        <i class="fas fa-minus"></i>
+                                    </button>
+                                    <span class="quantity">1</span>
+                                    <button class="quantity-btn plus">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn-remove">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                    <div class="order-item">
+                        <div class="item-image">
+                            <img src="fries.svg" alt="French Fries">
+                        </div>
+                        <div class="item-details">
+                            <h3>French Fries</h3>
+                            <p class="item-customization">Large size</p>
+                            <div class="item-price-qty">
+                                <span class="item-price">RS 130</span>
+                                <div class="quantity-selector">
+                                    <button class="quantity-btn minus">
+                                        <i class="fas fa-minus"></i>
+                                    </button>
+                                    <span class="quantity">1</span>
+                                    <button class="quantity-btn plus">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn-remove">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="promo-code">
+                    <input type="text" placeholder="Enter promo code">
+                    <button class="btn-apply">Apply</button>
+                </div>
+            </section>
+
+            <!-- Payment Method Section -->
+            <section class="checkout-section">
+                <div class="section-header">
+                    <h2>Payment Method</h2>
+                    <button class="btn-edit">
+                        <i class="fas fa-pencil-alt"></i>
+                    </button>
+                </div>
+                <div class="payment-methods">
+                    <div class="payment-card active">
+                        <div class="payment-radio">
+                            <input type="radio" id="credit-card" name="payment" checked>
+                            <label for="credit-card"></label>
+                        </div>
+                        <div class="payment-icon">
+                            <img src="../assets/images/payment-icon.svg" alt="Credit Card" width="24" height="24">
+                        </div>
+                        <div class="payment-details">
+                            <h3>Credit Card</h3>
+                            <p>**** **** **** 4567</p>
+                        </div>
+                    </div>
+                    <div class="payment-card">
+                        <div class="payment-radio">
+                            <input type="radio" id="upi" name="payment">
+                            <label for="upi"></label>
+                        </div>
+                        <div class="payment-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="payment-details">
+                            <h3>UPI</h3>
+                            <p>user@upi</p>
+                        </div>
+                    </div>
+                    <div class="payment-card">
+                        <div class="payment-radio">
+                            <input type="radio" id="cash" name="payment">
+                            <label for="cash"></label>
+                        </div>
+                        <div class="payment-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <div class="payment-details">
+                            <h3>Cash on Delivery</h3>
+                            <p>Pay when you receive</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Order Total -->
+        <div class="order-total">
+            <div class="total-breakdown">
+                <div class="breakdown-row">
+                    <span>Subtotal</span>
+                    <span>RS 220</span>
+                </div>
+                <div class="breakdown-row">
+                    <span>Delivery Fee</span>
+                    <span>RS 20</span>
+                </div>
+                <div class="breakdown-row discount">
+                    <span>Discount</span>
+                    <span>-RS 120</span>
+                </div>
+                <div class="breakdown-row total">
+                    <span>Total</span>
+                    <span>RS 120</span>
+                </div>
+            </div>
+            <button class="btn-place-order" id="placeOrderBtn">
+                Place Order
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Order Placed Modal -->
+    <div class="modal" id="orderPlacedModal">
+        <div class="modal-content">
+            <div class="success-animation">
+                <div class="checkmark-circle">
+                    <div class="checkmark"></div>
+                </div>
+            </div>
+            <h2>Order Placed Successfully!</h2>
+            <p>Your order has been placed and will be delivered in 25-30 minutes.</p>
+            <p class="order-number">Order #FD58721</p>
+            <div class="modal-actions">
+                <a href="../Design1-HomePage/index.html" class="btn-secondary">Back to Home</a>
+                <button class="btn-primary" id="trackOrderBtn">Track Order</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Tracking Modal -->
+    <div class="modal" id="trackingModal">
+        <div class="modal-content tracking-content">
+            <button class="modal-close" id="closeTrackingBtn">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2>Track Your Order</h2>
+            <p class="order-number">Order #FD58721</p>
+            
+            <div class="tracking-status">
+                <div class="status-timeline">
+                    <div class="timeline-item completed">
+                        <div class="timeline-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Order Confirmed</h3>
+                            <p>Your order has been received</p>
+                            <span class="time">12:45 PM</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item completed">
+                        <div class="timeline-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Preparing</h3>
+                            <p>Restaurant is preparing your food</p>
+                            <span class="time">12:50 PM</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item active">
+                        <div class="timeline-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Ready for Pickup</h3>
+                            <p>Your order will be picked up soon</p>
+                            <span class="time">1:05 PM</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-motorcycle"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>On the Way</h3>
+                            <p>Driver is heading to your location</p>
+                            <span class="time">--:--</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Delivered</h3>
+                            <p>Enjoy your meal!</p>
+                            <span class="time">--:--</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="delivery-info">
+                <div class="delivery-time">
+                    <h3>Estimated Delivery</h3>
+                    <p>1:15 PM - 1:20 PM</p>
+                </div>
+                <div class="driver-info">
+                    <div class="driver-photo">
+                        <img src="driver.svg" alt="Driver Photo">
+                    </div>
+                    <div class="driver-details">
+                        <h3>John D.</h3>
+                        <p>Your Delivery Driver</p>
+                        <div class="driver-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <button class="btn-call">
+                        <i class="fas fa-phone"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
