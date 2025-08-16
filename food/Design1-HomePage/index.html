@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Runs - Food Delivery App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="../assets/images/food-icon.svg" type="image/svg+xml">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Food Runs</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Restaurants</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">My Orders</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn btn-secondary">Sign In</button>
+                <button class="btn btn-primary">Sign Up</button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Delicious Food Delivered To Your Doorstep</h1>
+                <p>Order from your favorite restaurants and get food delivered in minutes</p>
+                <div class="search-bar">
+                    <input type="email" id="email-input" placeholder="Enter your email address" required>
+                    <button id="find-food-btn" class="btn btn-primary">Find Food</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <img src="phone-mockup.svg" alt="App Screenshot">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <h2>Why Choose Food Runs?</h2>
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="../assets/images/restaurant-icon.svg" alt="Wide Selection">
+                    </div>
+                    <h3>Wide Selection</h3>
+                    <p>Choose from thousands of restaurants with a wide variety of cuisines</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="../assets/images/delivery-icon.svg" alt="Fast Delivery">
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Get your food delivered in under 30 minutes, hot and fresh</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="../assets/images/food-icon.svg" alt="Easy Ordering">
+                    </div>
+                    <h3>Easy Ordering</h3>
+                    <p>Order with just a few taps on our user-friendly app</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Restaurants Section -->
+        <section class="popular-restaurants">
+            <h2>Popular Restaurants</h2>
+            <div class="restaurant-cards">
+                <div class="restaurant-card">
+                    <div class="restaurant-image">
+                        <img src="restaurant1.svg" alt="Restaurant 1">
+                    </div>
+                    <div class="restaurant-info">
+                        <h3>Burger Palace</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                            <span class="reviews">(200+ reviews)</span>
+                        </div>
+                        <p>Burgers, Fast Food</p>
+                        <div class="delivery-info">
+                            <span><i class="fas fa-clock"></i> 25-30 min</span>
+                            <span><i class="fas fa-truck"></i> Free delivery</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <div class="restaurant-image">
+                        <img src="restaurant2.svg" alt="Restaurant 2">
+                    </div>
+                    <div class="restaurant-info">
+                        <h3>Pizza Heaven</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.6</span>
+                            <span class="reviews">(150+ reviews)</span>
+                        </div>
+                        <p>Pizza, Italian</p>
+                        <div class="delivery-info">
+                            <span><i class="fas fa-clock"></i> 30-40 min</span>
+                            <span><i class="fas fa-truck"></i> Free delivery</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <div class="restaurant-image">
+                        <img src="restaurant3.svg" alt="Restaurant 3">
+                    </div>
+                    <div class="restaurant-info">
+                        <h3>Sushi Express</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9</span>
+                            <span class="reviews">(300+ reviews)</span>
+                        </div>
+                        <p>Japanese, Sushi</p>
+                        <div class="delivery-info">
+                            <span><i class="fas fa-clock"></i> 20-30 min</span>
+                            <span><i class="fas fa-truck"></i> Free delivery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more">
+                <button class="btn btn-secondary">View All Restaurants</button>
+            </div>
+        </section>
+
+        <!-- App Download Section -->
+        <section class="app-download">
+            <div class="app-content">
+                <h2>Download Our App</h2>
+                <p>Get the full experience on your mobile device. Order food, track delivery, and more!</p>
+                <div class="app-buttons">
+                    <a href="#" class="app-button">
+                        <i class="fab fa-apple"></i>
+                        <div class="app-button-text">
+                            <span>Download on the</span>
+                            <span class="store-name">App Store</span>
+                        </div>
+                    </a>
+                    <a href="#" class="app-button">
+                        <i class="fab fa-google-play"></i>
+                        <div class="app-button-text">
+                            <span>Get it on</span>
+                            <span class="store-name">Google Play</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="app-image">
+                <img src="app-screens.svg" alt="App Screenshots">
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Food Runs</h2>
+                    <p>Delicious food delivered fast</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Press</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>For Foodies</h3>
+                        <ul>
+                            <li><a href="#">User Guidelines</a></li>
+                            <li><a href="#">Offers</a></li>
+                            <li><a href="#">Loyalty Program</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>For Restaurants</h3>
+                        <ul>
+                            <li><a href="#">Partner with us</a></li>
+                            <li><a href="#">Business App</a></li>
+                            <li><a href="#">Success Stories</a></li>
+                            <li><a href="#">Restaurant Resources</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect with us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Food Runs. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookies Settings</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
