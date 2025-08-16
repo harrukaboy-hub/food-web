@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu - Food Runs</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="../assets/images/food-icon.svg" type="image/svg+xml">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="../Design1-HomePage/index.html" class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+                <div class="logo">
+                    <h1>Food Runs</h1>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">2</span>
+                </div>
+                <div class="user-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Restaurant Header -->
+        <section class="restaurant-header">
+            <div class="restaurant-banner">
+                <img src="../assets/images/restaurant-banner.svg" alt="Restaurant Banner">
+                <div class="restaurant-logo">
+                    <img src="../assets/images/burger-icon.svg" alt="Restaurant Logo">
+                </div>
+            </div>
+            <div class="restaurant-info">
+                <div class="restaurant-details">
+                    <h1>Burger Palace</h1>
+                    <div class="restaurant-meta">
+                        <span><i class="fas fa-star"></i> 4.8 (200+ reviews)</span>
+                        <span><i class="fas fa-clock"></i> 25-30 min</span>
+                        <span><i class="fas fa-map-marker-alt"></i> 2.5 km away</span>
+                    </div>
+                    <div class="restaurant-tags">
+                        <span class="tag">Burgers</span>
+                        <span class="tag">Fast Food</span>
+                        <span class="tag">American</span>
+                    </div>
+                </div>
+                <div class="restaurant-actions">
+                    <button class="btn-icon">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <button class="btn-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
+                    <button class="btn-icon">
+                        <i class="fas fa-info-circle"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Categories -->
+        <section class="menu-categories">
+            <div class="categories-scroll">
+                <button class="category-btn active">All</button>
+                <button class="category-btn">Burgers</button>
+                <button class="category-btn">Sides</button>
+                <button class="category-btn">Drinks</button>
+                <button class="category-btn">Desserts</button>
+                <button class="category-btn">Combos</button>
+            </div>
+        </section>
+
+        <!-- Special Offers -->
+        <section class="special-offers">
+            <h2>Special Offers</h2>
+            <div class="offers-scroll">
+                <div class="offer-card">
+                    <div class="offer-image">
+                        <img src="offer1.svg" alt="Special Offer 1">
+                    </div>
+                    <div class="offer-content">
+                        <h3>Family Combo</h3>
+                        <p>4 Burgers, 2 Large Fries, 4 Drinks</p>
+                        <div class="offer-price">
+                            <span class="original-price">RS 145</span>
+                            <span class="discount-price">RS 139</span>
+                        </div>
+                        <button class="btn-add">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-image">
+                        <img src="offer2.svg" alt="Special Offer 2">
+                    </div>
+                    <div class="offer-content">
+                        <h3>Double Cheese Deal</h3>
+                        <p>2 Double Cheeseburgers, 1 Large Fries, 2 Drinks</p>
+                        <div class="offer-price">
+                            <span class="original-price">RS 170</span>
+                            <span class="discount-price">RS 150</span>
+                        </div>
+                        <button class="btn-add">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Items -->
+        <section class="menu-section">
+            <h2>Popular Items</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="burger1.svg" alt="Classic Burger">
+                        <button class="btn-favorite">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="item-details">
+                        <h3>Classic Burger</h3>
+                        <p>Beef patty, lettuce, tomato, cheese, special sauce</p>
+                        <div class="item-meta">
+                            <div class="item-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                            <div class="item-calories">
+                                <i class="fas fa-fire"></i>
+                                <span>520 cal</span>
+                            </div>
+                        </div>
+                        <div class="item-price-action">
+                            <span class="item-price">RS 150</span>
+                            <button class="btn-add">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="burger2.svg" alt="Double Cheese Burger">
+                        <button class="btn-favorite">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="item-details">
+                        <h3>Double Cheese Burger</h3>
+                        <p>Double beef patty, double cheese, pickles, onions</p>
+                        <div class="item-meta">
+                            <div class="item-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                            <div class="item-calories">
+                                <i class="fas fa-fire"></i>
+                                <span>780 cal</span>
+                            </div>
+                        </div>
+                        <div class="item-price-action">
+                            <span class="item-price">RS 150</span>
+                            <button class="btn-add">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Burgers Section -->
+        <section class="menu-section">
+            <h2>Burgers</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="burger3.svg" alt="Veggie Burger">
+                        <button class="btn-favorite">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="item-details">
+                        <h3>Veggie Burger</h3>
+                        <p>Plant-based patty, avocado, lettuce, tomato, vegan mayo</p>
+                        <div class="item-meta">
+                            <div class="item-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.5</span>
+                            </div>
+                            <div class="item-calories">
+                                <i class="fas fa-fire"></i>
+                                <span>420 cal</span>
+                            </div>
+                        </div>
+                        <div class="item-price-action">
+                            <span class="item-price">RS 150</span>
+                            <button class="btn-add">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="burger4.svg" alt="Spicy Chicken Burger">
+                        <button class="btn-favorite">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="item-details">
+                        <h3>Spicy Chicken Burger</h3>
+                        <p>Crispy chicken, jalapeños, pepper jack cheese, spicy sauce</p>
+                        <div class="item-meta">
+                            <div class="item-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                            <div class="item-calories">
+                                <i class="fas fa-fire"></i>
+                                <span>650 cal</span>
+                            </div>
+                        </div>
+                        <div class="item-price-action">
+                            <span class="item-price">RS 150</span>
+                            <button class="btn-add">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="burger5.svg" alt="BBQ Bacon Burger">
+                        <button class="btn-favorite">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="item-details">
+                        <h3>BBQ Bacon Burger</h3>
+                        <p>Beef patty, bacon, cheddar, onion rings, BBQ sauce</p>
+                        <div class="item-meta">
+                            <div class="item-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                            <div class="item-calories">
+                                <i class="fas fa-fire"></i>
+                                <span>820 cal</span>
+                            </div>
+                        </div>
+                        <div class="item-price-action">
+                            <span class="item-price">RS 150</span>
+                            <button class="btn-add">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more">
+                <button class="btn-secondary">View All Burgers</button>
+            </div>
+        </section>
+
+        <!-- Sides Section -->
+        <section class="menu-section">
+            <h2>Sides</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="side1.svg" alt="French Fries">
+                        <button class="btn-favorite">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="item-details">
+                        <h3>French Fries</h3>
+                        <p>Crispy golden fries with sea salt</p>
+                        <div class="item-meta">
+                            <div class="item-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.6</span>
+                            </div>
+                            <div class="item-calories">
+                                <i class="fas fa-fire"></i>
+                                <span>320 cal</span>
+                            </div>
+                        </div>
+                        <div class="item-price-action">
+                            <span class="item-price">150</span>
+                            <button class="btn-add">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="side2.svg" alt="Onion Rings">
+                        <button class="btn-favorite">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="item-details">
+                        <h3>Onion Rings</h3>
+                        <p>Crispy battered onion rings with dipping sauce</p>
+                        <div class="item-meta">
+                            <div class="item-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.5</span>
+                            </div>
+                            <div class="item-calories">
+                                <i class="fas fa-fire"></i>
+                                <span>380 cal</span>
+                            </div>
+                        </div>
+                        <div class="item-price-action">
+                            <span class="item-price">150</span>
+                            <button class="btn-add">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more">
+                <button class="btn-secondary">View All Sides</button>
+            </div>
+        </section>
+
+        <!-- Cart Summary (Fixed at bottom) -->
+        <div class="cart-summary">
+            <div class="cart-info">
+                <div class="cart-items">
+                    <span class="item-count">2 items</span>
+                    <span class="item-total">RS 150</span>
+                </div>
+                <p class="delivery-estimate">Delivery in 25-30 min</p>
+            </div>
+            <a href="../Design3-CheckoutPage/index2.html" class="btn-checkout">
+                View Cart
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Item Detail Modal -->
+    <div class="modal" id="itemDetailModal">
+        <div class="modal-content">
+            <button class="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <div class="item-image-large">
+                    <img src="burger1-large.svg" alt="Classic Burger">
+                    <button class="btn-favorite">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+                <div class="item-details-full">
+                    <h2>Classic Burger</h2>
+                    <div class="item-meta-large">
+                        <div class="item-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7 (120+ reviews)</span>
+                        </div>
+                        <div class="item-calories">
+                            <i class="fas fa-fire"></i>
+                            <span>520 cal</span>
+                        </div>
+                    </div>
+                    <div class="item-description">
+                        <h3>Description</h3>
+                        <p>Our signature classic burger features a juicy 100% beef patty, fresh lettuce, ripe tomato slices, melted cheese, and our special house sauce, all served on a toasted brioche bun.</p>
+                    </div>
+                    <div class="item-ingredients">
+                        <h3>Ingredients</h3>
+                        <ul>
+                            <li>100% Beef Patty</li>
+                            <li>Brioche Bun</li>
+                            <li>Lettuce</li>
+                            <li>Tomato</li>
+                            <li>Cheese</li>
+                            <li>Special Sauce</li>
+                            <li>Pickles</li>
+                        </ul>
+                    </div>
+                    <div class="item-customization">
+                        <h3>Customization</h3>
+                        <div class="customization-options">
+                            <div class="customization-group">
+                                <h4>Add Extra</h4>
+                                <div class="option-items">
+                                    <div class="option-item">
+                                        <label for="extra-cheese">
+                                            <input type="checkbox" id="extra-cheese">
+                                            <span class="option-name">Extra Cheese</span>
+                                            <span class="option-price">+RS 15</span>
+                                        </label>
+                                    </div>
+                                    <div class="option-item">
+                                        <label for="extra-patty">
+                                            <input type="checkbox" id="extra-patty">
+                                            <span class="option-name">Extra Patty</span>
+                                            <span class="option-price">+RS 30</span>
+                                        </label>
+                                    </div>
+                                    <div class="option-item">
+                                        <label for="bacon">
+                                            <input type="checkbox" id="bacon">
+                                            <span class="option-name">Bacon</span>
+                                            <span class="option-price">+RS 10</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="customization-group">
+                                <h4>Remove</h4>
+                                <div class="option-items">
+                                    <div class="option-item">
+                                        <label for="no-lettuce">
+                                            <input type="checkbox" id="no-lettuce">
+                                            <span class="option-name">No Lettuce</span>
+                                        </label>
+                                    </div>
+                                    <div class="option-item">
+                                        <label for="no-tomato">
+                                            <input type="checkbox" id="no-tomato">
+                                            <span class="option-name">No Tomato</span>
+                                        </label>
+                                    </div>
+                                    <div class="option-item">
+                                        <label for="no-pickles">
+                                            <input type="checkbox" id="no-pickles">
+                                            <span class="option-name">No Pickles</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-quantity">
+                        <h3>Quantity</h3>
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <span class="quantity">1</span>
+                            <button class="quantity-btn plus">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="total-price">
+                    <span>Total:</span>
+                    <span class="price">RS 150</span>
+                </div>
+                <button class="btn-add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
